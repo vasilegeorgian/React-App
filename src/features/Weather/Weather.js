@@ -55,12 +55,13 @@ export function Weather() {
   };
 
   const [favorites, setFavorites] = useState(() => {
-    const fromStorage = localStorage.getItem('favorites');
-    if (fromStorage) {
-      return JSON.parse(fromStorage);
-    }
-    return null;
-  });
+  const fromStorage = localStorage.getItem('favorites');
+  if (fromStorage) {
+    return JSON.parse(fromStorage);
+  }
+  return [];
+});
+
 
   const handleAddFavorite = () => {
     if (!city) {
