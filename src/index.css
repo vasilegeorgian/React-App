@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-Light'),
+    url('./fonts/Poppins-Light.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: antiquewhite;
+  font-family: Poppins;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}

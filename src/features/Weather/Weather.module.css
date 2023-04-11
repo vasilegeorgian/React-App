@@ -1,0 +1,184 @@
+/* Weather */
+.weather {
+  padding: 1rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+.day {
+      background: linear-gradient(0.25turn, #6E8CD5, #9599E2, #F0B5B5);
+}
+
+.night {
+  background: #000e10;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.push-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1;
+}
+
+form > p {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: antiquewhite;
+  line-height: 2rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  padding-left: 0.1rem;
+  color: antiquewhite;
+  opacity: 0.5;
+}
+
+svg {
+  position: relative;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+/* Current Weather */
+
+.currentWeather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.5rem;
+  padding-top: 2.5rem;
+}
+
+.currentWeather > p {
+  font-weight: 600;
+}
+
+.currentWeather > p::first-letter {
+  text-transform: uppercase;
+}
+
+.iconCurrentWeather {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2.5rem;
+}
+
+.maxMin {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  opacity: 0.7;
+}
+
+/* Forecast */
+
+.forecast {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.forecastDays {
+  width: 15rem;
+}
+
+.iconForecast {
+  width: 2.5rem;
+  height: 2rem;
+  filter: invert(100%);
+}
+
+/* Favorites */
+
+.favorites {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000e10;
+  justify-content: center;
+  z-index: 999;
+}
+
+.favorites.visible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 1;
+  right: 1;
+}
+
+.favoriteCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+  background-color: #001a1a;
+  border-radius: 0.3rem;
+}
+
+.favoritesCard ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+.push-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  input {
+    width: 20rem;
+  }
+
+  .currentWeather {
+    margin-bottom: 2.5rem;
+  }
+
+  .iconCurrentWeather {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .forecastDays {
+    width: 7rem;
+  }
+
+  .iconForecast {
+    width: 3rem;
+    height: 2.5rem;
+  }
+}
