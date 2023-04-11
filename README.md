@@ -11,7 +11,7 @@ Start the node server for the ReactJS application with `npm start`. The server s
 This is a weather application that provides real-time weather data for a a given location.
 The application is linked to Visual Crossing Weather API (https://www.visualcrossing.com/weather-api).
 
-1. When opened, the application displays current weather data (image based on weather's type, weather type, current, min and max temperatures) and a forecast for the next 7 days (temperature and weather icon), based on the user's current location.
+1. When opened, the application displays current weather data (image based on weather's type, current, min and max temperatures) and a forecast for the next 7 days (temperature and weather icon), based on the user's current location.
 
 2. The application changes its theme based on whether it is day or night.
 
